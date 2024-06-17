@@ -1,0 +1,45 @@
+.Nav-bar{
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+.nav-wrapper{
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(0, 0, 34);
+}
+.ul-flex{
+  font-size: 18px;
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.Nav-Link{
+   text-decoration: none;
+   color: rgb(173, 173, 173);
+   letter-spacing: 0.3px;
+}
+.Nav-Link:hover{
+    color: white;
+}
+.nav-list-item{
+    display: flex;
+    align-self: center;
+}
+.up-arrow{
+    font-size: 20px;
+}
+.nav-list-item:hover .up-arrow{
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+.search-Profile-wrapper{
+    display: flex;
+    gap: 20px;
+}
