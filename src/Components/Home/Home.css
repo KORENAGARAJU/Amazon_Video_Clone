@@ -165,7 +165,8 @@
         padding: 0px;
     }
     .fav_wrapper_text h1 {
-        font-size: 35px;
+        font-size: 30px;
+        text-align: center;
     }
     .fav_wrapper_text p {
         font-size: 24px;
@@ -186,7 +187,7 @@
         font-size: 14px;
     }
 }
-@media (max-width:600px) {
+@media (max-width:450px) {
     .Home_container_wrapper{
         display: flex;
         flex-direction: column;
@@ -201,7 +202,7 @@
         background-image: linear-gradient(360deg,black,rgb(8, 8, 8),rgb(19, 19, 19),transparent);
     }
     .Image_Wrapper{
-        min-height: 400px;
+        min-height: 300px;
     }
     .Image_2Wrapper{
         min-height: 400px;
@@ -224,47 +225,14 @@
     .Plan_details{
         font-size: 14px;
     }
+    .fav_wrapper_text{
+        gap: 3px;
+    }
+    .fav_wrapper_text h1 {
+        font-size: 20px;
+    }
+    .fav_wrapper_text p {
+        font-size: 16px;
+    }
     
-}
-
-
-@media (max-width:400px) {
-    .Home_data_1content{
-        position: absolute;
-        top: 25%;
-        width: 100%;
-        padding:5px;
-    }
-    .Image_Wrapper{
-        min-height: 300px;
-    }
-    .Image_2Wrapper{
-        min-height: 300px;
-    }
-    .Home_data_1content h1{
-        font-size: 25px;
-    }
-    .Home_data_1content h3{
-        font-size: 12px ;  
-    }
-    .Annual_button{
-        padding: 10px;
-        font-size: 14px;
-        width: 100%;
-    }
-    .Plan_details{
-        font-size: 12px;
-    }
-    .footer_wrapper{
-        height: 100px;
-    }
-    .fotter_logo{
-        width: 90px;
-    }
-    .footer_content p{
-        font-size: 12px;
-    }
-    .link_F{
-        font-size: 14px;
-    }
 }
