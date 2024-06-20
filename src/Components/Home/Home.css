@@ -1,0 +1,270 @@
+.Home_container_wrapper{
+    color: white;
+    position: relative;
+}
+.Image_Wrapper{
+    min-height: 600px;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    background-position: right top;
+    background-color: rgb(56, 56, 56);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, #000 0%, transparent 20%), url('../Home/../../assets/MLP.jpg');
+}
+.Image_2Wrapper{
+    min-height: 600px;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    background-position: right top;
+    background-color: rgb(56, 56, 56);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, #000 0%, transparent 20%), url('../Home/../../assets/TVOD_MLP_Right.jpg');
+}
+.Home_data_1content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    padding: 80px 70px;
+    width: 60%;
+    background-image: linear-gradient(90deg,black,rgb(8, 8, 8),rgb(19, 19, 19),transparent);
+}
+.Home_data_1content h1{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.Home_data_1content h3{
+    font-size: 26px ;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    
+}
+.Annual_button{
+    padding: 15px 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(7, 119, 172);
+    color: white;
+    font-size: 15px;
+    font-weight: 580;
+    letter-spacing: 0.5px;
+    width: 300px;
+}
+.Preimum-Container-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    width: fit-content;
+}
+.Preimum-Container-wrapper p{
+    font-size: 16px;
+}
+.Annual_button:hover{
+    background-color: rgb(75, 163, 221);
+    cursor: pointer;
+}
+.Plan_details{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: rgb(241, 241, 241);
+    font-size: 18px;
+}
+
+.fav_wrapper_container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+}
+
+.fav_wrapper_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fav_wrapper_text h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.fav_wrapper_text p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.fav_content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+/* footer-content */
+.footer_wrapper{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+.Footer_Links{
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+.fotter_logo{
+    width: 120px;
+}
+.link_F{
+  color: rgb(152, 188, 255);
+  text-decoration: none;
+}
+.link_F:hover{
+    color: rgb(91, 143, 240);
+  }
+
+@media (max-width:768px) {
+    .Home_data_1content h1{
+        font-size: 35px;
+    }
+    .Home_data_1content h3{
+        font-size: 14px ;  
+    }
+    .Annual_button{
+        font-size: 14px;
+        padding: 14px;  
+    }
+    .Plan_details{
+        font-size: 14px;
+    }
+    .fav_wrapper_text{
+        padding: 0px;
+    }
+    .fav_wrapper_text h1 {
+        font-size: 35px;
+    }
+    .fav_wrapper_text p {
+        font-size: 24px;
+    }
+    .fav_wrapper_container{
+        padding: 20px;
+    }
+    .footer_wrapper{
+        height: 120px;
+    }
+    .link_F{
+        font-size: 14px;
+    }
+    .fotter_logo{
+        width: 100px;
+    }
+    .footer_content p{
+        font-size: 14px;
+    }
+}
+@media (max-width:600px) {
+    .Home_container_wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Home_data_1content{
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+        align-items: center;
+        background-image: linear-gradient(360deg,black,rgb(8, 8, 8),rgb(19, 19, 19),transparent);
+    }
+    .Image_Wrapper{
+        min-height: 400px;
+    }
+    .Image_2Wrapper{
+        min-height: 400px;
+    }
+    .Home_data_1content h1{
+        font-size: 30px;
+    }
+    .Home_data_1content h3{
+        font-size: 16px ;  
+    }
+    .Annual_button{
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .Preimum-Container-wrapper{
+        width: 100%;
+        gap: 8px;
+    }
+    .Plan_details{
+        font-size: 14px;
+    }
+    
+}
+
+
+@media (max-width:400px) {
+    .Home_data_1content{
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        padding:5px;
+    }
+    .Image_Wrapper{
+        min-height: 300px;
+    }
+    .Image_2Wrapper{
+        min-height: 300px;
+    }
+    .Home_data_1content h1{
+        font-size: 25px;
+    }
+    .Home_data_1content h3{
+        font-size: 12px ;  
+    }
+    .Annual_button{
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .Plan_details{
+        font-size: 12px;
+    }
+    .footer_wrapper{
+        height: 100px;
+    }
+    .fotter_logo{
+        width: 90px;
+    }
+    .footer_content p{
+        font-size: 12px;
+    }
+    .link_F{
+        font-size: 14px;
+    }
+}

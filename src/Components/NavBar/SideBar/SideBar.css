@@ -1,0 +1,59 @@
+.menu_content-Wrapper{
+    background-color: rgb(54, 54, 54);
+    position: absolute;
+    top: 160%;
+    max-width: 750px;
+    width: 100vw;
+    left: -10px;
+    z-index: 1000;
+}
+
+.categoires:hover .categoriesIcon{
+   transform: rotate(180deg);
+   transition: 0.4s;
+}
+.menu-icons{
+    color: rgb(202, 202, 202);
+}
+.menu_listItem{
+    padding: 10px;
+    list-style: none;
+}
+.Menu_link_flex{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    font-size: 16px;
+    gap: 5px;
+}
+.Menu_link_flex:hover{
+    color: rgb(255, 255, 255);
+}
+.Categoies_wrapper-dropDown{
+    margin-top: 10px;
+    color: rgb(196, 196, 196);
+    display: flex;
+    gap: 30px;
+}
+.menu_drop-li{
+    list-style: none;
+    padding: 7px 0px;
+}
+.menu_drop-li:hover .menu-links{
+    color: rgb(255, 255, 255);
+}
+.menu-links{
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+}
+.catego_wrapper{
+    color:rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+@media  (max-width:450px) {
+    .Menu_link_flex{
+        font-size: 14px
+    }
+}
