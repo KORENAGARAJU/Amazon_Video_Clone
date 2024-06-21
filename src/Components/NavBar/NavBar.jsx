@@ -165,8 +165,8 @@ const NavBar = () => {
                                 </div>
                             )}
                         </div>
-                        <div className='profile_dropDown' onMouseDown={profileHandlerFunc} onMouseEnter={profileHandlerFunc}>
-                           <FaUserCircle className='Profile nav-common-icon' style={{ fontSize: '25px' }} />
+                        <div className='profile_dropDown' onMouseLeave={profileHandlerFunc} onMouseEnter={profileHandlerFunc}>
+                           <FaUserCircle className='Profile nav-common-icon' style={{ fontSize: '25px' }}   />
                            {isMyProfileOpen && (<div className='profile_content_wrapper_flex'>
                                 <div className='profile_content_1 content'>
                                      <div className='content_heading'>
@@ -177,7 +177,7 @@ const NavBar = () => {
                                          <li className='profile_li'><Link to='/help' className='profile_link'>Watch Anywhere</Link></li>
                                          <li className='profile_li'><Link to='/help' className='profile_link'>Account & Settings</Link></li>
                                          <li className='profile_li'><Link to='/help' className='profile_link'>Prime Benefits</Link></li>
-                                         <li className='profile_li'><Link to='/help' className='profile_link'>Sign out</Link></li>
+                                         <li className='profile_li'><Link to='/login_sign_up' className='profile_link'>Sign out</Link></li>
                                      </ul>           
                                  </div>
                                  <div className='profile_content_1 content'>

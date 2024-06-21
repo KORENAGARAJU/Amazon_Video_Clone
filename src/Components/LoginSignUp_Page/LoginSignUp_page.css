@@ -1,0 +1,101 @@
+.Login-SignUp_content_wrapper{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.LoginSignUp_inner{
+    width: 450px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.LoginSignUp_content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid rgb(197, 197, 197);
+    padding: 10px 20px;
+    border-radius: 10px;
+    gap: 15px;
+    padding: 20px;
+}
+
+.LoginSignUp_content h1{
+   font-weight: 550;
+   font-size: 24px;
+}
+.Input_wrappper{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   gap:2px;
+   margin-top: 15px;
+}
+.input_header_label{
+    font-size: 14px;
+    font-weight: 600;
+}
+.input_SignUp_login{
+    padding: 8px;
+    border: 1px solid rgb(97, 97, 97);
+    font-size: 14px;
+    border-radius:5px ;
+}
+.continue_button{
+    background-color: rgb(255, 197, 8);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.continue_button:hover{
+    background-color: rgb(228, 175, 0) ;
+}
+.input_SignUp_login:focus{
+    outline: 2px solid rgba(0, 204, 255, 0.562);
+    transition: 0.2s;
+}
+.Conditons_text_wrapper{
+    font-size: 14px; 
+}
+.condition_text{
+    text-decoration: none;
+}
+.condition_text:hover{
+    color: red;
+    text-decoration:underline ;
+}
+.Link_Acc-Header{
+    font-size: 14px;
+    display: flex;
+    cursor: pointer;
+}
+.Link_Acc-Header p{
+    color: blue;
+}
+.Link_Acc-Header:hover p{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+.ForgotPassText{
+    font-size: 14px;
+    text-decoration: none;
+    padding: 15px;
+    color: blue;
+}
+
+.ForgotPassText:hover{
+    text-decoration: underline;
+    color: red;
+}
+.Need_help_Wrapper{
+    display: flex;
+    flex-direction: column;
+}
