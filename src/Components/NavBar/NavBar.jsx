@@ -5,6 +5,8 @@ import Logo from '../../assets/NavBar/logo.png';
 import { FaSearch ,FaUserCircle } from 'react-icons/fa';
 import { MdOutlineKeyboardArrowUp } from 'react-icons/md';
 import SideBar from './SideBar/SideBar';
+import { IoMdAddCircleOutline } from "react-icons/io";
+import { FaChild } from "react-icons/fa6";
 
 const NavBar = () => {
     const [isHomeDropDownOpen, SetHomeDropDown] = useState(false);
@@ -22,6 +24,8 @@ const NavBar = () => {
     const categoriesFuncHandler = () => SetCategoriesDropDown(!isCategoriesDropDownOpen);
     const InputFuncHandler = () => setInputToogle(!isMyInputOpen);
 
+    const [isMyProfileOpen , setProfileToggle] = useState(false) ;
+    const profileHandlerFunc = () => setProfileToggle(!isMyProfileOpen);
     // search Bar Toggle
     const searchRef = useRef(null);
     useEffect(() => {
@@ -60,7 +64,7 @@ const NavBar = () => {
                             {isHomeDropDownOpen && (
                                 <ul className='dropdown'>
                                     <li><Link className='dropDown-links' to='/all'>All</Link></li>
-                                    <li><Link className='dropDown-links' to='/moives'>Moives</Link></li>
+                                    <li><Link className='dropDown-links' to='/movies'>Moives</Link></li>
                                     <li><Link className='dropDown-links' to='/tv-shows'>TV Shows</Link></li>
                                 </ul>
                             )}
@@ -74,7 +78,7 @@ const NavBar = () => {
                             {isStoreDropDownOpen && (
                                 <ul className='dropdown'>
                                     <li><Link className='dropDown-links' to='/all'>All</Link></li>
-                                    <li><Link className='dropDown-links' to='/moives'>Rent</Link></li>
+                                    <li><Link className='dropDown-links' to='/'>Rent</Link></li>
                                     <li><Link className='dropDown-links' to='/tv-shows'>Channels</Link></li>
                                 </ul>
                             )}
@@ -145,7 +149,7 @@ const NavBar = () => {
                             {isMyStuffDropDownOpen && (
                                 <ul className='dropdown'>
                                     <li><Link className='dropDown-links' to='/all'>All</Link></li>
-                                    <li><Link className='dropDown-links' to='/moives'>WishList</Link></li>
+                                    <li><Link className='dropDown-links' to='/'>WishList</Link></li>
                                     <li><Link className='dropDown-links' to='/tv-shows'>Rentals</Link></li>
                                 </ul>
                             )}
@@ -161,8 +165,36 @@ const NavBar = () => {
                                 </div>
                             )}
                         </div>
-
-                        <FaUserCircle className='Profile nav-common-icon' style={{ fontSize: '25px' }} />
+                        <div className='profile_dropDown' onMouseDown={profileHandlerFunc} onMouseEnter={profileHandlerFunc}>
+                           <FaUserCircle className='Profile nav-common-icon' style={{ fontSize: '25px' }} />
+                           {isMyProfileOpen && (<div className='profile_content_wrapper_flex'>
+                                <div className='profile_content_1 content'>
+                                     <div className='content_heading'>
+                                         <h2>Your Account</h2>
+                                     </div>
+                                     <ul className='profile_Ul'>
+                                         <li className='profile_li'><Link to='/help' className='profile_link'>Help</Link></li>
+                                         <li className='profile_li'><Link to='/help' className='profile_link'>Watch Anywhere</Link></li>
+                                         <li className='profile_li'><Link to='/help' className='profile_link'>Account & Settings</Link></li>
+                                         <li className='profile_li'><Link to='/help' className='profile_link'>Prime Benefits</Link></li>
+                                         <li className='profile_li'><Link to='/help' className='profile_link'>Sign out</Link></li>
+                                     </ul>           
+                                 </div>
+                                 <div className='profile_content_1 content'>
+                                     <div className='content_heading'>
+                                         <h2>Profiles</h2>
+                                     </div>
+                                     <ul className='profile_Ul'>
+                                         <li className='profile_li'><Link to='/help' className='profile_link link-flex'><FaChild className='profile_icon'/>Kids</Link></li>
+                                         <li className='profile_li'><Link to='/help' className='profile_link link-flex'><IoMdAddCircleOutline className='profile_icon'/>Add new</Link></li>
+                                         <li className='profile_li'><Link to='/help' className='profile_link'>Manage profiles</Link></li>
+                                         <li className='profile_li'><Link to='/help' className='profile_link'>Learn More</Link></li>
+                                     </ul>           
+                                 </div>
+                           </div>
+                           )}
+                        </div>
+                       
                     </div>
                 </div>
             </nav>

@@ -14,7 +14,7 @@ const SideBar = () => {
     <div className='menu_content-Wrapper'>
       <ul className='Menu_Content_ul'>
         <li className='home menu_listItem'>
-          <Link className='Menu_link_flex' to='/home'>
+          <Link className='Menu_link_flex' to='/'>
             <FiHome className='menu-icons' />
             <p>Home</p>
           </Link>
