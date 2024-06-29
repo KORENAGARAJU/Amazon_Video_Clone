@@ -99,3 +99,64 @@
     display: flex;
     flex-direction: column;
 }
+.Divider-Container{
+    display: flex;
+    gap: 2px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.line{
+    border: 0.5px solid rgb(231, 231, 231);
+    width: 100%;
+}
+.NewToAmazon{
+    white-space: nowrap;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+.CreateAccount_btn{
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid  rgb(231, 231, 231) ;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.CreateAccount_btn:hover{
+    background-color: white;
+}
+.outer-line{
+    max-width: 1020px;
+    width: 100%;
+    border: 1px solid  rgb(241, 241, 241);
+    margin-top: 20px;
+}
+.link_Sign_F{
+    color: rgb(31, 78, 165);
+   text-decoration: none;
+   font-size: 14px;
+}
+.link_Sign_F:hover{
+    color: rgb(3, 53, 146);
+}
+.SignConditions_Links p{
+    font-size: 12px;
+    
+}
+.SignConditions_Links{
+    display: flex;
+    gap: 7px;
+}
+.prime_logo_cl{
+    width: 150px;
+}
+@media (max-width:728px){
+    .prime_logo_cl{
+        width: 120px;
+    }
+}
