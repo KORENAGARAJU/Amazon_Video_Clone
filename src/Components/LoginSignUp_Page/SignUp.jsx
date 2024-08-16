@@ -72,8 +72,8 @@ const SignUp = () => {
   };
 
   let bodyContent = JSON.stringify({
-    name: formValues.name,
-    email: formValues.email,
+    name: formValues.name.toLocaleLowerCase(),
+    email: formValues.email.toLocaleLowerCase(),
     password: formValues.password,
     appType: 'ott',
   });

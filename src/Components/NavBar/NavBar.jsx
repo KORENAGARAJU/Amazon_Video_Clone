@@ -177,7 +177,7 @@ const NavBar = () => {
                                          <li className='profile_li'><Link to='/help' className='profile_link'>Watch Anywhere</Link></li>
                                          <li className='profile_li'><Link to='/help' className='profile_link'>Account & Settings</Link></li>
                                          <li className='profile_li'><Link to='/help' className='profile_link'>Prime Benefits</Link></li>
-                                         <li className='profile_li'><Link to='/login' className='profile_link'>Sign out</Link></li>
+                                         <li className='profile_li'><Link to='/SignUp' className='profile_link'>Sign out</Link></li>
                                      </ul>           
                                  </div>
                                  <div className='profile_content_1 content'>

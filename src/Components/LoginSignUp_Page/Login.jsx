@@ -32,7 +32,7 @@ const Login = () => {
     
     let bodyContent = JSON.stringify({
         "name": "kore nagaraju",
-        "email": inputValue,
+        "email": inputValue.toLocaleLowerCase(),
         "password": passwordValue,
         "appType": "ott"
     });
