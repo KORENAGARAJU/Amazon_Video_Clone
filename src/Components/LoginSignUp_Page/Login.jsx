@@ -1,11 +1,10 @@
 import './Login.css';
 import Prime_logo from '../../assets/loginSignUpLogo.png';
 import { MdArrowRight } from "react-icons/md";
-import { Link } from 'react-router-dom';
+import { Link,Navigate, useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-
 const Login = () => {
   const [isForgotOpen , isForgotOpenToggle] = useState(false);
   const autoFocusInput = useRef(null) ;
@@ -13,7 +12,10 @@ const Login = () => {
   const [errorMessage , SetErrorMessage] = useState('') ;
   const [password,SetPassword] = useState(true) ;
   const [passwordValue , setPasswordValue] = useState('') ;
-
+  const navigate = useNavigate() ;
+  function GoToSignUp(){
+    navigate('/SignUp');
+  }
   async function submitHandler(){
     if(emailRegex.test(inputValue)){
       SetPassword(false) ;
@@ -49,6 +51,9 @@ const Login = () => {
         let data = await response.json();
         console.log(data);
         toast.success('SuccessFul Login')
+        setTimeout(()=>{
+          navigate('/');
+        },2000)
     } catch (error) {
       toast.error('Enter Correct Details') ;  
       SetPassword(!password);
@@ -128,7 +133,7 @@ const Login = () => {
             <p className='NewToAmazon'>New to Amazon?</p>
             <div className='line'></div>
           </div>
-          <button className='CreateAccount_btn' type='submit'>Create your Amazon account</button>
+          <button onClick={GoToSignUp} className='CreateAccount_btn' type='submit'>Create your Amazon account</button>
           <div className='outer-line'>
       </div>
       <div className='SignConditions_Links'>

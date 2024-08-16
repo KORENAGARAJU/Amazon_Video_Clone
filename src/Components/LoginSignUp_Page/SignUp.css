@@ -1,0 +1,114 @@
+.signUp-wrapper{
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.primeLogo-SignUp{
+    width: 120px;
+    margin-top: 20px;
+}
+.container {
+    max-width: 400px;
+    margin-top:20px;
+    height: 480px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid rgb(222, 222, 222);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+  }
+  input:focus{
+    outline: 2px solid rgba(0, 204, 255, 0.562);
+    transition: 0.2s;
+  }
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #181818;
+    font-weight: 600;
+  }
+  
+  .input {
+    margin-top: 4px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .button {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    background-color: #f1be3d;
+    color: #111;
+    cursor: pointer;
+    font-weight: 550;
+  }
+  .button:hover{
+    background-color: #e0ac26;
+  }
+  .text {
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .link {
+    color: #0073bb;
+    text-decoration: none;
+  }
+  .AlreadyHaveAccount{
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  
+  
+  .password-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .password-input input {
+    padding-right: 30px;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    font-size: 15px;
+    margin-top: 3px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
